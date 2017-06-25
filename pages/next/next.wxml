@@ -1,0 +1,4 @@
+<!--next.wxml-->
+<view class="next_main">
+  <text class="next_txt">{{next_txt}}</text>
+</view>
