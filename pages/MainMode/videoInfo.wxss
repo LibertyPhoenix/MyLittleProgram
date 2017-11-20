@@ -1,0 +1,28 @@
+/* pages/MainMode/videoInfo.wxss */
+
+.main-video {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between
+}
+
+.inputView {
+  border: 0.5px solid #616161;
+  border-radius: 2px;
+  margin-left: 1px;
+  margin-right: 1px;
+  margin-top: 1px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.input {
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 44px;
+  flex: 3;
+}
+
+.btn-send-danmu {
+  flex: 1;
+}

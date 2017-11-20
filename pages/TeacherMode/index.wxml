@@ -1,0 +1,12 @@
+<view class="view-row" wx:for="{{teacherList}}" data-index="{{index}}" bindtap = "onItemClick" >
+  <image style="width:105px;height:105px;" mode="aspectFill" src="{{picHost+item.avatar}}"></image>
+  <text class="text-radius-right">{{item.abbrName+"\n"+item.nationality +"\n"+"TotalLesson : "+item.totalLesson}}</text>
+</view>
+<view class="loadmore" hidden="{{isHideLoadMore}}" wx:if="{{isNull}}">
+  <view class="loading"></view>
+  <view class="loadmore__tips">已加载完毕 ！</view>
+</view>
+<view class="loadmore" hidden="{{isHideLoadMore}}" wx:if="{{!isNull}}">
+  <view class="loading"></view>
+  <view class="loadmore__tips">正在加载...</view>
+</view>

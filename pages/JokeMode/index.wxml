@@ -1,0 +1,5 @@
+<scroll-view scroll-y="true" style="height: 100%;" bindscrolltolower="ScrollToBottom">
+  <view class="view-row" wx:for="{{jokeList}}">
+    <text class="text-radius">{{item.content}}</text>
+  </view>
+</scroll-view>

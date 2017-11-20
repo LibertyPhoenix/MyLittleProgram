@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/MainMode/index",
+    "pages/JokeMode/index",
+    "pages/TeacherMode/index",
+    "pages/MyMode/index",
+    "pages/TeacherMode/TeacherInfo",
+    "pages/MainMode/musicInfo",
+    "pages/MainMode/videoInfo"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#3cc51f",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "#fff",
+    "backgroundColor": "#3cc51f"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/MainMode/index",
+        "iconPath": "image/icon_component.png",
+        "selectedIconPath": "image/icon_component_HL.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/TeacherMode/index",
+        "iconPath": "image/icon_API.png",
+        "selectedIconPath": "image/icon_API_HL.png",
+        "text": "老师"
+      },
+      {
+        "pagePath": "pages/JokeMode/index",
+        "iconPath": "image/icon_API.png",
+        "selectedIconPath": "image/icon_API_HL.png",
+        "text": "笑话"
+      },
+      {
+        "pagePath": "pages/MyMode/index",
+        "iconPath": "image/icon_component.png",
+        "selectedIconPath": "image/icon_component_HL.png",
+        "text": "视频"
+      }
+    ]
+  }
+}

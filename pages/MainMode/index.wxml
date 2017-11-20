@@ -1,0 +1,29 @@
+<!--pages/BookingCourseMode/index.wxml-->
+
+<!-- swipe  -->
+
+<swiper style="height:{{sysWidth/2+'px'}};" catchtap='onSwiperClick' indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item.url}}" mode='aspectFill' style="width:{{sysWidth+'px'}};" data-post-id="{{item.pagePath}}" />
+    </swiper-item>
+  </block>
+</swiper>
+
+<!-- 横向列表  -->
+
+<text>音乐列表</text>
+<scroll-view scroll-x="true" style="width:{{sysWidth+'px'}}; white-space: nowrap;">
+  <!--  display: inline-block-->
+  <view wx:for="{{musicUrls}}" style="display: inline-block" bindtap = "onMusicItemClick" data-index='{{index}}'>
+    <image src="{{item.poster}}" style="width:155px;height:115px;"/>
+  </view>
+</scroll-view>
+
+<text>视频列表</text>
+<scroll-view scroll-x="true" style="width:{{sysWidth+'px'}}; white-space: nowrap;">
+  <!--  display: inline-block-->
+  <view wx:for="{{musicUrls}}" style="display: inline-block" bindtap = "onVideoItemClick" data-index='{{index}}'>
+    <image src="{{item.poster}}" style="width:155px;height:115px;"/>
+  </view>
+</scroll-view>

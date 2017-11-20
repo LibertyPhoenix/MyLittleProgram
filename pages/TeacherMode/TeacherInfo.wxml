@@ -1,0 +1,6 @@
+<!--pages/CourseHistoryMode/TeacherInfo.wxml-->
+<view class='container'>
+  <text>{{teacherId}}</text>
+  <image style="width:{{sysWidth+'px'}};" mode='widthFix' src='{{imgUrl}}' ></image>
+  <text>{{teacherName}}</text>
+</view>
