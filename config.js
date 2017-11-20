@@ -2,7 +2,6 @@
  * 小程序配置文件
  */
 
-
 // 聚合数据
 var host = "japi.juhe.cn"
 
