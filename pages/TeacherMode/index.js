@@ -45,14 +45,16 @@ Page({
 
         var data = pageNum === 1 ? res.data.data.rows : self.data.teacherList.concat(res.data.data.rows);
 
-        var isNull = res.data.data.rows.size === 0
+        var isNull = res.data.data.rows.length === 0
+
+        console.log(isNull+"---");
+        console.log(res.data.data.rows.length + "---");
+        console.log(res.data.data.rows + "---");
 
         self.setData({
           teacherList: data,
           picHost: picHost,
-          isHideLoadMore: false,
           isNull: isNull
-
         });
       },
       fail: function (res) {
@@ -101,7 +103,7 @@ Page({
       //1.5秒后 加载数据
       setTimeout(function () {
         self.setData({
-          isHideLoadMore: true
+          isNull:false
         });
         self.loadData();
       }, 1500);

@@ -17,7 +17,7 @@ Page({
       url: jokeUrl,
       data: {
         page: pageNum,
-        pagesize: '10',
+        pagesize: '5',
         sort: 'asc',
         time: '1410000537',
         key: '89822028bcf5fa05d0d74949a8ab3e10'
